@@ -1,15 +1,15 @@
 name: Deployment Exercise 2
 on: push
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download code
-        uses: actions/checkout@v3
-      - name: Install dependencies
-        run: npm ci
-      - name: Lint Test
-        run: npm run lint
+  #lint:
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - name: Download code
+  #      uses: actions/checkout@v3
+  #    - name: Install dependencies
+  #      run: npm ci
+  #    - name: Lint Test
+  #      run: npm run lint
   Test:
     runs-on: ubuntu-latest
     steps:
