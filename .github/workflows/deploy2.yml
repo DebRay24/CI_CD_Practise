@@ -32,4 +32,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deployment
-        echo: "Deployment done"
+        run: echo "Deployment done!"
