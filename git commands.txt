@@ -1,0 +1,13 @@
+How to create a local repository and upload in into the remote repository
+- git init (Initialize a local git repository)
+- git add . (Stage all files)
+- git commit -m "Initial commit" (Commit files, this will create the first branch ususally named 'main')
+Now you have to create a remote repository in the GitHub profile. And link that repository with this local repository.
+Below steps are to create a remote GitHub repository.
+Once the repository is created grab the http url and use it in the below command
+- git remote add origin https://github.com/DebRay24/CI_CD_Practise.git 
+(Set up the remote repository in the local git repository. Origin is the identifier here.)
+- git push (This will through an error that the current main branch has no upstream branch. So, use the below command.)
+- git push --set-upstream origin main
+Note that the personal access token has been set up on the local machine earlier.
+Now your code is uploaded in the remote repository and your local repository is linked to your remote.
